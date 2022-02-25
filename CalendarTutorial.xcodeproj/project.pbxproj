@@ -9,18 +9,17 @@
 /* Begin PBXBuildFile section */
 		41C1F5C227C816DF00E2C379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1F5C127C816DF00E2C379 /* AppDelegate.swift */; };
 		41C1F5C427C816DF00E2C379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1F5C327C816DF00E2C379 /* SceneDelegate.swift */; };
-		41C1F5C627C816DF00E2C379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1F5C527C816DF00E2C379 /* ViewController.swift */; };
-		41C1F5C927C816DF00E2C379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C1F5C727C816DF00E2C379 /* Main.storyboard */; };
+		41C1F5C627C816DF00E2C379 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C1F5C527C816DF00E2C379 /* CalendarViewController.swift */; };
 		41C1F5CB27C816E100E2C379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C1F5CA27C816E100E2C379 /* Assets.xcassets */; };
 		41C1F5CE27C816E100E2C379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C1F5CC27C816E100E2C379 /* LaunchScreen.storyboard */; };
+		41C1F5D727C8500C00E2C379 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 41C1F5D627C8500C00E2C379 /* CalendarKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41C1F5BE27C816DF00E2C379 /* CalendarTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C1F5C127C816DF00E2C379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41C1F5C327C816DF00E2C379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41C1F5C527C816DF00E2C379 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		41C1F5C827C816DF00E2C379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41C1F5C527C816DF00E2C379 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		41C1F5CA27C816E100E2C379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41C1F5CD27C816E100E2C379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41C1F5CF27C816E100E2C379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C1F5D727C8500C00E2C379 /* CalendarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +58,7 @@
 			children = (
 				41C1F5C127C816DF00E2C379 /* AppDelegate.swift */,
 				41C1F5C327C816DF00E2C379 /* SceneDelegate.swift */,
-				41C1F5C527C816DF00E2C379 /* ViewController.swift */,
-				41C1F5C727C816DF00E2C379 /* Main.storyboard */,
+				41C1F5C527C816DF00E2C379 /* CalendarViewController.swift */,
 				41C1F5CA27C816E100E2C379 /* Assets.xcassets */,
 				41C1F5CC27C816E100E2C379 /* LaunchScreen.storyboard */,
 				41C1F5CF27C816E100E2C379 /* Info.plist */,
@@ -83,6 +82,9 @@
 			dependencies = (
 			);
 			name = CalendarTutorial;
+			packageProductDependencies = (
+				41C1F5D627C8500C00E2C379 /* CalendarKit */,
+			);
 			productName = CalendarTutorial;
 			productReference = 41C1F5BE27C816DF00E2C379 /* CalendarTutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 41C1F5B527C816DF00E2C379;
+			packageReferences = (
+				41C1F5D527C8500C00E2C379 /* XCRemoteSwiftPackageReference "CalendarKit" */,
+			);
 			productRefGroup = 41C1F5BF27C816DF00E2C379 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +132,6 @@
 			files = (
 				41C1F5CE27C816E100E2C379 /* LaunchScreen.storyboard in Resources */,
 				41C1F5CB27C816E100E2C379 /* Assets.xcassets in Resources */,
-				41C1F5C927C816DF00E2C379 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41C1F5C627C816DF00E2C379 /* ViewController.swift in Sources */,
+				41C1F5C627C816DF00E2C379 /* CalendarViewController.swift in Sources */,
 				41C1F5C227C816DF00E2C379 /* AppDelegate.swift in Sources */,
 				41C1F5C427C816DF00E2C379 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		41C1F5C727C816DF00E2C379 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41C1F5C827C816DF00E2C379 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		41C1F5CC27C816E100E2C379 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +288,9 @@
 				DEVELOPMENT_TEAM = 947MDTH7AR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CalendarTutorial/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app accesses your calendar for you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,9 +316,9 @@
 				DEVELOPMENT_TEAM = 947MDTH7AR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CalendarTutorial/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app accesses your calendar for you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41C1F5D527C8500C00E2C379 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41C1F5D627C8500C00E2C379 /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41C1F5D527C8500C00E2C379 /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 41C1F5B627C816DF00E2C379 /* Project object */;
 }
